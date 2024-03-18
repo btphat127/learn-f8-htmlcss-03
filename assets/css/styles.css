@@ -21,10 +21,26 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    --height:60px;
+    display: inline-block;
+    text-align: center;
+    min-width: 205px;
+    line-height: var(--height);
+    padding: 0 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    height: var(--height);
+    border-radius: 99px;
+    background-color: #2E80CE;
+}
+
 
 /* Header */
 
 .header {
+    padding-top: 30px ;
     background-color: var(--primary-color);
     height: 100vh;
 }
@@ -33,6 +49,13 @@ a {
     width:  1170px ;
     max-width: calc(100% - 48px);
     margin: 0 auto;
+  
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -83,4 +106,118 @@ a {
     color: #FFF;
     font-size: 1.2em;
     font-weight: 300;
+}
+
+.navbar__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.8rem;
+}
+
+.header-action__login,
+.navbar__link {
+    padding: 4px 21px;
+    color: #C9D2DA;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+.navbar__link--active{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.navbar__list::before {
+    position: absolute;
+    top:  11px;
+    left: 8px  ;
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.navbar__link:hover, .navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__signup{
+    --height: 44px;
+    min-width: 104px;
+    margin-left: 8px;
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+.hero__content{
+    width: 44%;
+}
+
+.hero__heading {
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__row span {
+    color: #FFF;
+    margin-left: 38px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.hero__media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.hero__images {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__images:first-child {
+    position: relative;
+    margin-right: -6px;
+}
+
+.hero__images:last-child {
+    width: 210px;
+    height: 410px;
 }
