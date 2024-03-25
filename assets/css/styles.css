@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 63.5%;
+    font-size: 62.5%;
 }
 
 body {
@@ -34,6 +34,24 @@ a {
     height: var(--height);
     border-radius: 99px;
     background-color: #2E80CE;
+}
+
+.section-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+
+.section-desc {
+    width: 468px;
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
 }
 
 .btn:hover {
@@ -146,6 +164,7 @@ a {
 }
 
 .navbar__link:hover, .navbar__link--active {
+    color: #fff;
     text-shadow: 1px 0 0 currentColor;
 }
 
@@ -227,7 +246,7 @@ a {
 
 /* Services */
 .services {
-    margin-top: 170px;
+    margin: 170px 0;
 }
 
 .services__heading {
@@ -238,25 +257,6 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-.services-heading {
-    color: #10375C;
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -1px;
-}
-
-
-.services-desc {
-    width: 468px;
-    margin-top: 18px;
-    color: #575F66;
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1.66;
 }
 
 .services__body {
@@ -325,3 +325,54 @@ a {
     margin-bottom: 55px;
 }
 
+
+/* Works */
+.work {
+    padding: 100px 0px;
+    background: #F6FBFF;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 30px;
+    margin-top: 86px;
+}
+
+.work-items {
+    padding: 43px;
+    border: 16px solid #EAF6FF;
+    border-radius: 4px;
+    transition: 0.25s;
+
+}
+
+.work-items:hover {
+    border-color:#2E80CE;
+    transform: translateY(-16px);
+}
+
+.work-items__heading {
+    color: #10375C;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+    margin-top: 18px;
+}
+
+.work-items__desc {
+    margin-top: 28px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-items__more {
+    display: block;
+    margin-top: 18px;
+    color: #2E80CE;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
