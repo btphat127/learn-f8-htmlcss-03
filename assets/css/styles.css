@@ -377,7 +377,6 @@ a {
     line-height: 1.75;
 }
 
-<<<<<<< HEAD
 /* Member */
 
 .member {
@@ -464,7 +463,6 @@ a {
 
 .member-items:hover .member-items__img {
     transform: scale(1.1);
-=======
 /* Feature */
 .feature {
     margin-top: 170px;
@@ -502,5 +500,4 @@ a {
 
 .feature__cta {
     margin-top: 38px;
->>>>>>> refs/remotes/origin/main
 }
