@@ -502,3 +502,46 @@ a {
 .feature__cta {
     margin-top: 38px;
 }
+
+/* Install */
+.install {
+    margin-top: 265px;
+}
+
+.install__inner {
+    display: flex;
+    column-gap: 160px;
+    align-items: center;
+    background-color: #2E80CE;
+    padding: 0 70px ;
+}
+
+.install__heading,.install__desc {
+    color: white;
+} 
+
+.install__heading {
+    max-width: 489px ;
+}
+
+.install__desc {
+    width: auto;
+}
+
+.install__phone {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+
+.install__info {
+    width: 50%;
+}
+
+.install__app {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
