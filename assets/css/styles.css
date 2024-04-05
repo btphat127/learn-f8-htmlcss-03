@@ -646,3 +646,38 @@ a {
     color: #2E80CE;
 }
 
+/* Appointment */
+.appointment {
+    margin-top: 170px;
+    text-align: center;
+}
+
+.appointment__inner {
+    padding: 100px 178px;
+    background: #F6FBFF;
+    border-radius: 4px;
+}
+
+.appointment__heading{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appointment__desc {
+    width: 617px;
+    margin: 18px auto 38px;
+    font-size: 1.6rem;
+}
