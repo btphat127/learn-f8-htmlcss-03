@@ -87,6 +87,11 @@ a {
     rotate: 180deg;
 }
 
+button, textarea, select, input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 /* Header */
 
 .header {
@@ -145,6 +150,7 @@ a {
 
 .logo__brand {
     display: block;
+    font-family: Sora, sans-serif;
     color: #FFF;
     text-align: right;
     font-size: 1.8em;
@@ -680,4 +686,126 @@ a {
     width: 617px;
     margin: 18px auto 38px;
     font-size: 1.6rem;
+}
+
+/* Footer */
+
+.footer {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 170px;
+    padding-top: 100px;
+    background: #10375C;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr ;
+    column-gap: 78px;
+}
+
+.footer__column-desc {
+    margin-top: 20px;
+    color: #A9B3BB;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__items {
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__social {
+    margin-bottom: 28px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2E80CE;
+    transition: 0.25s;
+}
+
+.footer__social-link:hover {
+    background-color: #2E80CE;
+    color: #fff;
+}
+
+.footer__email {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.footer__email-box {
+    padding: 0 10px;
+    margin-right: 12px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+}
+
+.footer__email-box::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer__email-submit {
+    min-width: 108px;
+    --height: 46px;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+}
+
+.footer__copyright {
+    border-top: 1px solid #406181 ;
+}
+
+.footer__copyright-text {
+    padding: 28px 0 42px;
+    color: #AAB3BA;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
 }
